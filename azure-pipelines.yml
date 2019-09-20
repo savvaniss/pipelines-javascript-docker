@@ -12,7 +12,7 @@ steps:
   displayName: Build an image
   inputs:
     containerRegistry: |
-      $(lamdahellix)
+      lamdahellix
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
