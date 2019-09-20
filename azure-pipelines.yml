@@ -11,6 +11,8 @@ steps:
 - task: Docker@2
   displayName: Build an image
   inputs:
+    containerRegistry: |
+      $(lamdahellix)
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
